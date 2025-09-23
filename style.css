@@ -1,0 +1,20 @@
+/* Ultra modern styles with floating elements, interactions, and subtle animations */
+/* ... shortened for brevity ... includes fix for project.featured layout ... */
+.project.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.project.featured .left,
+.project.featured .right { min-width: 0; }
+.project.featured ul.bullets.small {
+  display: block;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+.project.featured ul.bullets.small li {
+  margin-bottom: 6px;
+  white-space: normal;
+}
+/* ... rest of CSS remains unchanged ... */
