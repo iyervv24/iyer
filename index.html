@@ -9,7 +9,205 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Check: Styles should load now</h1>
-  <p>If you see this text styled with dark background and crimson highlights, the CSS link is fixed.</p>
+  <div class="scene">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="brand" onclick="scrollToTop()" style="cursor:pointer">
+        <div class="avatar">VV</div>
+        <div class="titles">
+          <div class="name">Vaidyanathan Venkataraman (Iyer)</div>
+          <div class="role">IT Strategist • ERP, WMS &amp; RFID</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cta" onclick="location.href='/iyer/resume.pdf'">Resume</button>
+      <button class="menu" aria-label="menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home" aria-label="hero">
+      <div class="hero-left">
+        <h1 class="headline">I build resilient digital systems that actually work.</h1>
+        <p class="sub">35+ years leading ERP, WMS and RFID automation across Pharma, FMCG, Paper, Textile & Manufacturing. I ship products, not slides.</p>
+        <div class="ctas">
+          <a class="btn primary" href="/iyer/resume.pdf" download>Download Resume</a>
+          <a class="btn ghost" href="#work">View Work</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="num">35+</div><div class="label">Years</div></div>
+          <div class="stat"><div class="num">20+</div><div class="label">Large Projects</div></div>
+          <div class="stat"><div class="num">5</div><div class="label">Industries</div></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card floating" data-float>
+          <div class="card-head">
+            <div class="pill">Senior Project Manager</div>
+            <div class="company">Raj Barcode Systems</div>
+          </div>
+          <div class="card-body">
+            <div class="role-title">IT Strategist</div>
+            <p class="tiny">ERP • WMS • RFID • Digital Transformation</p>
+            <div class="action-row">
+              <a class="small-btn" href="#contact">Let's talk</a>
+              <a class="small-btn outline" href="#work">Case study</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass" aria-hidden="true">
+          <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#DC143C" stop-opacity="0.9"/><stop offset="1" stop-color="#ff7a7a" stop-opacity="0.6"/></linearGradient></defs>
+            <rect x="0" y="0" width="160" height="160" rx="24" fill="url(#g)" opacity="0.12"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card reveal">
+      <h2>About</h2>
+      <p>I align technology roadmaps with business growth — shipping SAP ERP implementations, WMS solutions and RFID-enabled automation. I've led cross-border teams, owned P&amp;L, and delivered modernization in regulated industries.</p>
+      <ul class="bullets">
+        <li>IT Leadership &amp; Strategy</li>
+        <li>ERP &amp; WMS — SAP ECC 6.0</li>
+        <li>Digital Transformation</li>
+        <li>Global Project Delivery</li>
+        <li>P&amp;L &amp; Operations</li>
+        <li>Mentoring &amp; Team Building</li>
+      </ul>
+    </section>
+
+    <section id="expertise" class="card reveal">
+      <h2>Expertise</h2>
+      <div class="grid-3 interactive">
+        <div class="tile" data-tilt>
+          <div class="ic">PM</div>
+          <h4>Project Management</h4>
+          <p class="muted">Delivering outcomes, reducing risk.</p>
+        </div>
+        <div class="tile" data-tilt>
+          <div class="ic">VM</div>
+          <h4>Vendor Management</h4>
+          <p class="muted">Tighter delivery, clearer SLAs.</p>
+        </div>
+        <div class="tile" data-tilt>
+          <div class="ic">SP</div>
+          <h4>Strategic Planning</h4>
+          <p class="muted">Roadmaps that survive exec changes.</p>
+        </div>
+        <div class="tile" data-tilt>
+          <div class="ic">SAP</div>
+          <h4>SAP R/3 (HANA)</h4>
+          <p class="muted">Large-scale ERP rollouts.</p>
+        </div>
+        <div class="tile" data-tilt>
+          <div class="ic">BI</div>
+          <h4>Business Intelligence</h4>
+          <p class="muted">Actionable dashboards & analytics.</p>
+        </div>
+        <div class="tile" data-tilt>
+          <div class="ic">TM</div>
+          <h4>Team Management</h4>
+          <p class="muted">Mentoring & leadership culture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="card reveal">
+      <h2>Work Experience</h2>
+      <div class="timeline modern">
+        <div class="node">
+          <div class="meta">2020 — Present</div>
+          <div class="content"><strong>Senior Project Manager</strong><div class="org">Raj Barcode Systems Pvt. Ltd.</div></div>
+        </div>
+        <div class="node">
+          <div class="meta">2005 — 2020</div>
+          <div class="content"><strong>IT Head / CIO</strong><div class="org">Various Organizations</div></div>
+        </div>
+        <div class="node">
+          <div class="meta">1990 — 2005</div>
+          <div class="content"><strong>IT Leadership Roles</strong><div class="org">Pharma, FMCG, Paper</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="card reveal">
+      <h2>Featured Project</h2>
+      <div class="project-grid">
+        <article class="project featured" data-reveal>
+          <div class="left">
+            <h3>Basco Paints — "Zawadika Na Marangi" Loyalty Portal</h3>
+            <p class="muted">Project Manager — multi-channel loyalty system (Web, Android, USSD)</p>
+            <ul class="bullets small">
+              <li>Multi-channel: Web + Android + USSD (*338#)</li>
+              <li>Points-based scratch code redemption &amp; MPesa payouts</li>
+              <li>Vendor coordination, QA, rollout planning</li>
+              <li>Terms &amp; compliance, upgrade planning & scalability</li>
+            </ul>
+            <div class="proj-cta">
+              <a class="btn primary" href="#contact">Discuss this project</a>
+              <a class="btn ghost" href="#contact">Get PDF case study</a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="gallery">
+              <div class="shot" style="background-image:url('/iyer/assets/basco-1.png')"></div>
+              <div class="shot" style="background-image:url('/iyer/assets/basco-2.png')"></div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="project aside floating-card" data-float>
+          <h4>Impact</h4>
+          <p class="muted">Improved customer engagement, repeat purchases, and scalable design for future expansion.</p>
+          <div class="numbers">
+            <div><strong>+40%</strong><div class="muted">Repeat purchases</div></div>
+            <div><strong>Scalable</strong><div class="muted">Architecture</div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="card reveal">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="info">
+          <p>Email: <a href="mailto:iyervv24@gmail.com" class="link">iyervv24@gmail.com</a></p>
+          <p>LinkedIn: <span class="muted">(add your LinkedIn URL)</span></p>
+          <p>Open to: Full-time / Contract / Consultant | Willing to relocate (Singapore / UAE)</p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <input name="name" placeholder="Your name" required />
+          <input name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <div class="form-row">
+            <button class="btn primary" type="submit">Send Message</button>
+            <button class="btn ghost" type="button" onclick="copyEmail()">Copy Email</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Vaidyanathan Venkataraman — Built with ❤️</div>
+      <div class="foot-links"><a href="#home">Back to top</a></div>
+    </footer>
+  </main>
+
+<script src="/iyer/script.js"></script>
 </body>
 </html>
