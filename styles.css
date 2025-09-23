@@ -1,0 +1,25 @@
+/* Full fixed styles.css */
+
+body { margin:0; background:#071127; color:#e6eef8; font-family:Inter, sans-serif; }
+h1 { color:#DC143C; }
+p { color:#ccc; line-height:1.6; }
+
+/* Featured Project Fix */
+.project.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  width: 100%;
+}
+.project.featured ul.bullets.small {
+  display: block;
+  padding-left: 1.2em;
+  list-style: disc;
+  line-height: 1.6;
+}
+.project.featured ul.bullets.small li {
+  display: list-item;
+  margin-bottom: 8px;
+  white-space: normal;
+}
