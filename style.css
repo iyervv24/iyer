@@ -176,3 +176,18 @@ body{margin:0;background:linear-gradient(180deg,#071127 0%, #0b1220 60%);color:#
 
 /* small helper: ensure text truncation doesn't cause overlap elsewhere */
 .left, .right { min-width: 0; }
+/* --- FIX: Featured Project bullets layout --- */
+.project.featured ul.bullets.small {
+  display: block !important;   /* force it to be a normal block list */
+  padding-left: 1.2em;         /* normal bullet indentation */
+  list-style: disc;            /* show standard bullets */
+  line-height: 1.6;            /* spacing between lines */
+  margin: 12px 0;              /* top/bottom breathing space */
+}
+
+.project.featured ul.bullets.small li {
+  display: list-item;          /* force proper bullet behavior */
+  margin-bottom: 8px;
+  white-space: normal;         /* allow wrapping */
+}
+
